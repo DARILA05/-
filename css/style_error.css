@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+:root {
+    --color1: #F5FFFA;
+    --color2: #A2A2D0;
+    --color3: #CCCCFF;
+    --color4: #E6E6FA;
+    --color5: black;
+
+    --bg-body: #F5FFFA;
+    --bg-hd: #60607b;
+    --bg-fr: #A2A2D0;
+
+    --shadow: 0px 2px 28px -4px rgba(0,0,0,0.44);
+    --blur: blur(5px);
+    
+    --bg-hd-op: rgba(162, 162, 208, 0);
+    --glass-bg-1: rgba(130, 130, 167, 0.526);
+    --glass-bg-2: rgba(137, 137, 137, 0.526);
+    --glass-bor-bot: 1.5px solid rgba(255, 255, 255, 0.3);
+    --glass-bor: 1.5px solid rgba(255, 255, 255, 0.3);
+}
+
+html, body {
+    height: 100%;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--bg-hd);
+    transition: .25s;
+}
+
+.error-content {
+    position: relative;
+    max-width: 500px;
+    margin: 0 auto;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.h1 {
+    font-size: 80px;
+    font-weight: 900;
+    text-align: center;
+    color: var(--color1);
+    margin-bottom: 15px;
+}
+
+.h2 {
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    color: var(--color1);
+}
+
+.desc-error {
+    color: var(--color1);
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+    line-height: 35px;
+}
+
+.btn {
+    display: block;
+    margin: 0 auto;
+    font-size: 25px;
+    font-weight: 700;
+    color: var(--color1);
+    background-color: transparent;
+    border: 2px solid var(--color1);
+    border-radius: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+    outline: none;
+    transition: .25s;
+}
+
+@media (hover:hover) {
+    .btn:hover {
+        color: var(--bg-hd);
+        background-color: var(--color1);
+    }
+}
+
+.btn:active {
+    transform: scale(1.05);
+    color: var(--bg-hd);
+    background-color: var(--color1);
+}

@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html id="html" class="light_theme" lang="ru-RU">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Розмарин | Восхитительное место</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header" id="header">
+        <div class="glass-bg"></div>
+        <div class="h-content" id="h-content">
+            <button class="logo" onclick="document.location='index.html'">
+                <i class="fa-solid fa-burger"></i> &nbsp;РОЗМАРИН
+            </button>
+            <div class="btn-panels">
+                <div class="personal-panel">
+                    <button class="btn-icon" onclick="document.location='signin.html'">
+                        <i class="fa-solid fa-right-to-bracket"></i>
+                    </button>
+                    <button class="btn-icon" onclick="document.location='cart.html'">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </button>
+                </div>
+                <button class="btn-mb" id="btn-mb">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+            <nav class="menu-burger">
+                <ul class="mb-list">
+                    <li class="mb-items">
+                        <a class="link1 desc" href="menu.html">
+                            <i class="fa-solid fa-bowl-food"></i>&nbsp; МЕНЮ &nbsp;<i class="fa-solid fa-utensils"></i>
+                        </a>
+                    </li>
+                    <li class="mb-items">
+                        <a class="link1 desc" href="galereya.html">
+                            <i class="fa-solid fa-camera"></i>&nbsp; ГАЛЕРЕЯ &nbsp;<i class="fa-solid fa-image"></i>
+                        </a>
+                    </li>
+                    <li class="mb-items">
+                        <a class="link1 desc" href="#contacts">
+                            <i class="fa-solid fa-phone"></i>&nbsp; КОНТАКТЫ &nbsp;<i class="fa-solid fa-map-location-dot"></i>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="container">
+        <main class="contents">
+            <button class="upper" id="upper">
+                <i class="fa-solid fa-chevron-up"></i>
+            </button>
+            <div class="content-home">
+                <h1 class="h1-2">
+                    СТАТИСТИКА &nbsp;<i class="fas fa-signal"></i></i>
+                </h1>
+                <div class="statistics">
+                    <div class="stat-block">
+                        <h2 class="h2-1">
+                            Посетители сайта
+                        </h2>
+                        <h1 class="h1-2">
+                            <b><i>1250</i></b>
+                        </h1>
+                    </div>
+                    <div class="stat-block">
+                        <h2 class="h2-1">
+                            Количество заказов
+                        </h2>
+                        <h1 class="h1-2">
+                            <b><i>320</i></b>
+                        </h1>
+                    </div>
+                    <div class="stat-block">
+                        <h2 class="h2-1">
+                            Выручка
+                        </h2>
+                        <h1 class="h1-2">
+                            <b><i>150 000&#8381;</i></b>
+                        </h1>
+                    </div>
+                    <div class="stat-block">
+                        <h2 class="h2-1">
+                            Популярные блюда
+                        </h2>
+                        <ul class="famous-eats">
+                            <li class="famous-eat desc">
+                                Салат &laquo;Цезарь&raquo;
+                            </li>
+                            <li class="famous-eat desc">
+                                Крем-суп грибной
+                            </li>
+                            <li class="famous-eat desc">
+                                Курица-карри
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="content-main-1">
+                <h1 class="h1-2">
+                    УПРАВЛЕНИЕ МЕНЮ &nbsp;<i class="fas fa-wrench"></i></i>
+                </h1>
+                <div class="block-contents">
+                    <div class="block-content">
+                        <h2 class="h2-1">
+                            Добавление блюд &nbsp;<i class="fas fa-cart-plus"></i>
+                        </h2>
+                        <form class="eat-items-settings" name="eat-items-settings" method="post">
+                            <select name="group-eat" id="group-eat" required>
+                                <option hidden>Выбрать группу блюд</option>
+                                <option value="Основные блюда">Основные блюда</option>
+                                <option value="Закуски">Закуски</option>
+                                <option value="Напитки">Напитки</option>
+                            </select>
+                            <input id="eat-name" name="eat-name" type="text" placeholder="Название блюда" autocomplete="off" maxlength="30" required>
+                            <textarea id="opisanie" name="opisanie" placeholder="Описание блюда" required></textarea>
+                            <input id="price" name="price" type="number" placeholder="Цена" autocomplete="off" required>
+                            <label for="file-add" class="choice-file">Выбрать фото</label>
+                            <input id="file-add" name="file-add" type="file" accept="image/*" required>
+                            <button class="btn-m" type="submit">ДОБАВИТЬ</button>
+                        </form>
+                    </div>
+                    <div class="block-content">
+                        <h2 class="h2-1">
+                            Редактирование блюд &nbsp;<i class="fas fa-wrench"></i></i>
+                        </h2>
+                        <form class="eat-items-settings" name="eat-items-settings" method="post">
+                            <select name="group-eat" id="group-eat" required>
+                                <option hidden>Выбрать группу блюд</option>
+                                <option value="Основные блюда">Основные блюда</option>
+                                <option value="Закуски">Закуски</option>
+                                <option value="Напитки">Напитки</option>
+                            </select>
+                            <input id="eat-name-old" name="eat-name-old" type="text" placeholder="Старое название" autocomplete="off" maxlength="30" required>
+                            <input id="eat-name-old" name="eat-name-new" type="text" placeholder="Новое название" autocomplete="off" maxlength="30" required>
+                            <textarea id="opisanie" name="opisanie" placeholder="Изменить описание" required></textarea>
+                            <input id="price" name="price" type="number" placeholder="Изменить цену" autocomplete="off" required>
+                            <label for="file-edit" class="choice-file">Выбрать фото</label>
+                            <input id="file-edit" name="file-edit" type="file" accept="image/*" required>
+                            <button class="btn-m" type="submit">РЕДАКТИРОВАТЬ</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="content-main-1">
+                <h1 class="h1-2">
+                    УПРАВЛЕНИЕ ЗАКАЗАМИ &nbsp;<i class="fas fa-wrench"></i></i>
+                </h1>
+                <h2 class="h2-1">
+                    Текущие заказы
+                </h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>
+                                ID
+                            </th>
+                            <th>
+                                Дата
+                            </th>
+                            <th>
+                                Имя
+                            </th>
+                            <th>
+                                Фамилия
+                            </th>
+                            <th>
+                                Блюда
+                            </th>
+                            <th>
+                                Статус
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                1
+                            </td>
+                            <td>
+                                2023-10-27
+                            </td>
+                            <td>
+                                Иван
+                            </td>
+                            <td>
+                                Иванов
+                            </td>
+                            <td>
+                                <ul class="famous-eats">
+                                    <li class="famous-eat desc">
+                                        Салат &laquo;Цезарь&raquo;
+                                    </li>
+                                    <li class="famous-eat desc">
+                                        Крем-суп грибной
+                                    </li>
+                                    <li class="famous-eat desc">
+                                        Латте
+                                    </li>
+                                </ul>
+                            </td>
+                            <td>
+                                Готовится
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                2
+                            </td>
+                            <td>
+                                2023-10-27
+                            </td>
+                            <td>
+                                Анна
+                            </td>
+                            <td>
+                                Петрова
+                            </td>
+                            <td>
+                                <ul class="famous-eats">
+                                    <li class="famous-eat desc">
+                                        Сырный суп
+                                    </li>
+                                </ul>
+                            </td>
+                            <td>
+                                Доставлено
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                3
+                            </td>
+                            <td>
+                                2023-10-27
+                            </td>
+                            <td>
+                                Дмитрий
+                            </td>
+                            <td>
+                                Сидоров
+                            </td>
+                            <td>
+                                <ul class="famous-eats">
+                                    <li class="famous-eat desc">
+                                        Тосты с лососем
+                                    </li>
+                                    <li class="famous-eat desc">
+                                        Зелёный чай 750мл
+                                    </li>
+                                </ul>
+                            </td>
+                            <td>
+                                Доставлено
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <h2 class="h2-1">
+                    История заказов
+                </h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>
+                                ID
+                            </th>
+                            <th>
+                                Дата
+                            </th>
+                            <th>
+                                Имя
+                            </th>
+                            <th>
+                                Фамилия
+                            </th>
+                            <th>
+                                Блюда
+                            </th>
+                            <th>
+                                Статус
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                1
+                            </td>
+                            <td>
+                                2023-10-26
+                            </td>
+                            <td>
+                                Иван
+                            </td>
+                            <td>
+                                Иванов
+                            </td>
+                            <td>
+                                <ul class="famous-eats">
+                                    <li class="famous-eat desc">
+                                        Американо 150мл
+                                    </li>
+                                </ul>
+                            </td>
+                            <td>
+                                Доставлено
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                2
+                            </td>
+                            <td>
+                                2023-10-25
+                            </td>
+                            <td>
+                                Анна
+                            </td>
+                            <td>
+                                Петрова
+                            </td>
+                            <td>
+                                <ul class="famous-eats">
+                                    <li class="famous-eat desc">
+                                        Сырный суп
+                                    </li>
+                                    <li class="famous-eat desc">
+                                        Картофель фри
+                                    </li>
+                                    <li class="famous-eat desc">
+                                        Зелёный чай 750мл
+                                    </li>
+                                </ul>
+                            </td>
+                            <td>
+                                Доставлено
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                3
+                            </td>
+                            <td>
+                                2023-10-24
+                            </td>
+                            <td>
+                                Дмитрий
+                            </td>
+                            <td>
+                                Сидоров
+                            </td>
+                            <td>
+                                <ul class="famous-eats">
+                                    <li class="famous-eat desc">
+                                        Спагетти &laquo;Карбонара&raquo;
+                                    </li>
+                                    <li class="famous-eat desc">
+                                        Картофель фри
+                                    </li>
+                                    <li class="famous-eat desc">
+                                        Тосты с лососем
+                                    </li>
+                                    <li class="famous-eat desc">
+                                        Молочный коктейль<br>(классический)
+                                    </li>
+                                </ul>
+                            </td>
+                            <td>
+                                Доставлено
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                4
+                            </td>
+                            <td>
+                                2023-10-23
+                            </td>
+                            <td>
+                                Иван
+                            </td>
+                            <td>
+                                Иванов
+                            </td>
+                            <td>
+                                <ul class="famous-eats">
+                                    <li class="famous-eat desc">
+                                        Тосты с лососем
+                                    </li>
+                                    <li class="famous-eat desc">
+                                        Зелёный чай 750мл
+                                    </li>
+                                </ul>
+                            </td>
+                            <td>
+                                Доставлено
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                5
+                            </td>
+                            <td>
+                                2023-10-22
+                            </td>
+                            <td>
+                                Анна
+                            </td>
+                            <td>
+                                Петрова
+                            </td>
+                            <td>
+                                <ul class="famous-eats">
+                                    <li class="famous-eat desc">
+                                        Тосты с лососем
+                                    </li>
+                                    <li class="famous-eat desc">
+                                        Зелёный чай 420мл
+                                    </li>
+                                </ul>
+                            </td>
+                            <td>
+                                Доставлено
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <button class="btn-m">
+                    ПОДРОБНЕЕ
+                </button>
+            </div>
+            <div class="content-main-1">
+                <h1 class="h1-2">
+                    УПРАВЛЕНИЕ КЛИЕНТАМИ &nbsp;<i class="fas fa-wrench"></i></i>
+                </h1>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>
+                                ID
+                            </th>
+                            <th>
+                                Имя
+                            </th>
+                            <th>
+                                Фамилия
+                            </th>
+                            <th>
+                                Почта
+                            </th>
+                            <th>
+                                История заказов
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                1
+                            </td>
+                            <td>
+                                Иван
+                            </td>
+                            <td>
+                                Иванов
+                            </td>
+                            <td>
+                                example@mail.com
+                            </td>
+                            <td>
+                                <a class="link1" href="#">
+                                    Просмотреть
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                2
+                            </td>
+                            <td>
+                                Анна
+                            </td>
+                            <td>
+                                Петрова
+                            </td>
+                            <td>
+                                example@mail.com
+                            </td>
+                            <td>
+                                <a class="link1" href="#">
+                                    Просмотреть
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                3
+                            </td>
+                            <td>
+                                Дмитрий
+                            </td>
+                            <td>
+                                Сидоров
+                            </td>
+                            <td>
+                                example@mail.com
+                            </td>
+                            <td>
+                                <a class="link1" href="#">
+                                    Просмотреть
+                                </a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <button class="btn-m">
+                    ПОДРОБНЕЕ
+                </button>
+            </div>
+            <div class="content-main-1">
+                <h1 class="h1-2">
+                    УПРАВЛЕНИЕ ОБРАТНОЙ СВЯЗЬЮ &nbsp;<i class="fas fa-wrench"></i></i>
+                </h1>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>
+                                ID
+                            </th>
+                            <th>
+                                Имя
+                            </th>
+                            <th>
+                                Фамилия
+                            </th>
+                            <th>
+                                Почта
+                            </th>
+                            <th>
+                                Сообщение
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                1
+                            </td>
+                            <td>
+                                Иван
+                            </td>
+                            <td>
+                                Иванов
+                            </td>
+                            <td>
+                                example@mail.com
+                            </td>
+                            <td>
+                                Отличное кафе!
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                2
+                            </td>
+                            <td>
+                                Анна
+                            </td>
+                            <td>
+                                Петрова
+                            </td>
+                            <td>
+                                example@mail.com
+                            </td>
+                            <td>
+                                Делают всё шикарно!
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                3
+                            </td>
+                            <td>
+                                Дмитрий
+                            </td>
+                            <td>
+                                Сидоров
+                            </td>
+                            <td>
+                                example@mail.com
+                            </td>
+                            <td>
+                                Просто замечательное место!
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <button class="btn-m">
+                    ПОДРОБНЕЕ
+                </button>
+            </div>
+        </main>
+    </div>
+    <footer class="footer">
+        <div class="f-content1">
+            <button class="logo" onclick="document.location='index.html'">
+                <i class="fa-solid fa-burger"></i> &nbsp;РОЗМАРИН
+            </button>
+            <div class="panels">
+                <h1 class="h1-1">НАВИГАЦИЯ</h1>
+                <nav class="f-menu">
+                    <ul class="fm-list">
+                        <li class="fm-items">
+                            <a class="link1 desc" href="menu.html">
+                                <i class="fa-solid fa-bowl-food"></i>&nbsp; МЕНЮ &nbsp;<i class="fa-solid fa-utensils"></i>
+                            </a>
+                        </li>
+                        <li class="fm-items">
+                            <a class="link1 desc" href="galereya.html">
+                                <i class="fa-solid fa-camera"></i>&nbsp; ГАЛЕРЕЯ &nbsp;<i class="fa-solid fa-image"></i>
+                            </a>
+                        </li>
+                        <li class="fm-items">
+                            <a class="link1 desc" href="#contacts">
+                                <i class="fa-solid fa-phone"></i>&nbsp; КОНТАКТЫ &nbsp;<i class="fa-solid fa-map-location-dot"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <h1 class="h1-1">СОЦИАЛЬНЫЕ СЕТИ</h1>
+                <nav class="f-menu">
+                    <ul class="fm-list">
+                        <li class="fm-items">
+                            <button class="btn-icon" onclick="document.location='https://vk.com/feed'">
+                                <i class="fa-brands fa-vk"></i>
+                            </button>
+                        </li>
+                        <li class="fm-items">
+                            <button class="btn-icon" onclick="document.location='https://ok.ru/'">
+                                <i class="fa-brands fa-square-odnoklassniki"></i>
+                            </button>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="f-content2">
+            <p class="desc">
+                &copy; 2024 Розмарин. All Rights Reserved.
+            </p>
+            <button class="btn-m" id="theme-btn">
+                <i class="fa-solid fa-sun"></i>&nbsp; СВЕТЛАЯ ТЕМА &nbsp;<i class="fa-solid fa-sun"></i>
+            </button>
+        </div>
+    </footer>
+</body>
+<script defer src="js/script.js"></script>
+<script defer src="js/theme-script.js"></script>
+</html>

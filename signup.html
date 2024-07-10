@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html id="html" class="light_theme" lang="ru-RU">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Розмарин | Восхитительное место</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header-form">
+            <button class="btn-m" id="theme-btn">
+                <i class="fa-solid fa-sun"></i>&nbsp; СВЕТЛАЯ ТЕМА &nbsp;<i class="fa-solid fa-sun"></i>
+            </button>
+        </header>
+        <main class="content-form">
+            <form class="form-account" name="form-account" method="post">
+                <input id="first_name" name="first_name" type="text" placeholder="Имя" autocomplete="off" maxlength="15" required>
+                <input id="last_name" name="last_name" type="text" placeholder="Фамилия" autocomplete="off" maxlength="20" required>
+                <input id="login" name="login" type="text" placeholder="Логин" autocomplete="off" required>
+                <input id="E-mail" name="E-mail" type="email" placeholder="Почта" autocomplete="off">
+                <input id="tel" name="tel" type="tel" pattern="8[0-9]{10}" placeholder="Телефон (8 и 10 цифр)" autocomplete="off" required>
+                <p class="desc">
+                    <i class="fa-solid fa-mars"></i>&nbsp; <b>Ваш пол</b> &nbsp;<i class="fa-solid fa-venus"></i>
+                </p>
+                <div class="gender-group">
+                    <label class="label-gender desc">
+                        <input id="gender" name="gender" type="radio" value="male" required> Муж
+                        <span></span>
+                    </label>
+                    <label class="label-gender desc">
+                        <input id="gender" name="gender" type="radio" value="female" required> Жен
+                        <span></span>
+                    </label>
+                </div>
+                <select name="city" id="city" required>
+                    <option hidden>Выбрать город</option>
+                    <option value="Москва">Москва</option>
+                    <option value="Санкт-Петербург">Санкт-Петербург</option>
+                    <option value="Челябинск">Челябинск</option>
+                    <option value="Миасс">Миасс</option>
+                    <option value="Казань">Казань</option>
+                    <option value="Новосибирск">Новосибирск</option>
+                    <option value="Архангельск">Архангельск</option>
+                    <option value="Курган">Курган</option>
+                </select>
+                <input id="password" name="password" type="password" placeholder="Пароль" autocomplete="off" required>
+                <input id="password_check" name="password_check" type="password" placeholder="Подтверждение пароля" autocomplete="off" required>
+                <label class="label-check desc">
+                    <input id="soglasie" name="soglasie" type="checkbox" value="yes" required> Я соглашаюсь с <a class="link2" href="#">политикой в отношении персональных данных</a>
+                    <span></span>
+                </label>
+                <button class="btn-m" type="submit">ЗАРЕГИСТРИРОВАТЬСЯ</button>
+                <p class="desc">
+                    Уже есть аккаунт? <a class="link2" href="signin.html">Авторизация</a>
+                </p>
+            </form>
+        </main>
+    </div>
+</body>
+<script defer src="js/theme-script.js"></script>
+</html>
